@@ -7,7 +7,7 @@ const NewsInformation = () => {
     <div className="news-container">
       <header>
         <img 
-          src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+          src=""
         />
       </header>
       <section>
