@@ -1,0 +1,64 @@
+.CompanyDetails {
+    height: 400px;
+
+    .box {
+        //width: 60%;
+        height: 100%;
+        background: pink;
+        margin: auto;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        //padding: 14% 0;
+
+        .mainL {
+            display: flex;
+
+            img {
+                width: 88px;
+                height: 112px;
+                margin-right: 30px;
+            }
+            .mainLText {
+                display: flex;
+                flex-direction: column;
+                font-size: 14px;
+                color: #656565;
+            }
+            .mainLText div {
+                display: flex;
+                align-items: center;
+                margin-bottom: 18px;
+            }
+            .mainLText img {
+                width: 14px;
+                height: 14px;
+                margin-right: 6px;
+            }
+            .mainLText div:nth-child(1) {
+                font-size: 24px;
+                font-weight: bold;
+                color: black;
+            }
+        }
+        .mainR {
+            display: flex;
+            font-size: 14px;
+            color: #656565;
+            margin-top: 6px;
+
+            div {
+                margin-left: 40px;
+            }
+        }
+    }
+    .footer {
+        text-align: center;
+        font-size: 14px;
+        color: #999;
+    }
+
+}
+

@@ -19,7 +19,7 @@ const Share = () => {
   ]
 
   return (
-    <div className="container">
+    <div className="Share">
       <div className="box">
         <div className="left">
           <img className="dh" src={dh} alt="" />
