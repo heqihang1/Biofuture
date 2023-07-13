@@ -1,34 +1,23 @@
 // 新闻资讯
 import React from "react";
-import { Image } from 'antd';
+import NewsContext from "./NewsContext";
+import NewsVideo from "./NewsVideo";
+import './newsInformation.scss';
 
 const NewsInformation = () => {
   return (
-    <div className="news-container">
+    <div className="newsContainer">
       <header>
-        12
-        <img 
-          src=""
+        <img
+          title=""
+          src="∂"
         />
       </header>
-      <section>
-        <h5></h5>
-        <div>
-          <aside>
-            <h6></h6>
-            <article></article>
-          </aside>
-          <figure>
-            <img src="" alt="" srcset="" />
-          </figure>
-        </div>
-      </section>
-      <section>
-        <article>
-          <h6></h6>
-          <span></span>
-        </article>
-        <video src=""></video>
+      <section className="newsContent">
+        {/* 内容 */}
+        <NewsContext />
+        {/* 新闻视频 */}
+        <NewsVideo />
       </section>
     </div>
   )

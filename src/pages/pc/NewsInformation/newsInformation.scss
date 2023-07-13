@@ -1,3 +1,148 @@
-.news-container{
-    
+$size: 100%;
+
+@mixin boxSize {
+  width: $size;
+  height: $size;
+}
+
+@mixin textEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // flex-wrap: nowrap;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.newsContainer {
+  overflow-y: auto;
+  padding-bottom: 80px;
+  @include boxSize;
+
+  header {
+    margin-bottom: 108px;
+
+    img {
+      width: $size;
+      height: 591px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+    }
+  }
+
+  .newsContent {
+    padding: 0 300px;
+    @include boxSize;
+    // display: flex;
+    // justify-content: center;
+  }
+}
+
+// 文字内容
+.newsContainerContent {
+  @include boxSize;
+  margin-bottom: 96px;
+
+  .newsContainerTitle {
+    text-align: center;
+    color: #333333;
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 96px;
+
+    span:nth-child(1) {
+      font-family: 'Arial-BoldMT';
+      margin-right: 14px;
+      margin-bottom: 144px;
+    }
+
+    span:nth-child(2) {
+      font-family: 'SourceHanSansCN-Bold';
+    }
+  }
+
+  .newsOneConternt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 96px;
+    @include boxSize;
+    aside {
+      width: 50%;
+
+      h6 {
+        color: #333333;
+        font-size: 24px;
+        font-family: 'SourceHanSansCN-Bold';
+        margin-left: 1rem;
+        margin-bottom: 68px;
+      }
+
+      article {
+        height: 400px;
+        background: #FFFFFF;
+        box-shadow: 10px 0px 46px 0px rgba(160, 188, 164, 0.5);
+        opacity: 1;
+        padding: 25px;
+
+        span {
+          width: 306px;
+          height: 80px;
+          font-size: 16px;
+          font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+          font-weight: 400;
+          color: #656565;
+          line-height: 18px;
+          white-space: pre-wrap;
+        }
+      }
+    }
+
+    figure {
+      width: 50%; //295px
+      height: 469px;
+      margin: 0;
+
+      img {
+        @include boxSize;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+// 视频模块
+.videoNewsContainer {
+  height: 285px;
+  background: #0A250D;
+  opacity: 0.3;
+  padding-top: 70px;
+  padding-left: 77px;
+  position: relative;
+
+  .videoLeftText {
+    h6 {
+      font-size: 20px;
+      font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+      font-weight: bold;
+      color: #FFFFFF;
+      line-height: 15px;
+      margin-bottom: 26px;
+    }
+
+    span {
+      display: block;
+      @include textEllipsis;
+      width: 264px;
+      max-height: 72px;
+      font-size: 8px;
+      font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+      font-weight: 400;
+      color: #FFFFFF;
+      line-height: 18px;
+    }
+  }
 }
