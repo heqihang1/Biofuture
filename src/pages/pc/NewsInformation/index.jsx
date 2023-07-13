@@ -6,6 +6,7 @@ const NewsInformation = () => {
   return (
     <div className="news-container">
       <header>
+        12
         <img 
           src=""
         />
